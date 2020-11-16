@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="form.html" method="POST">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <fieldset>
+                <legend>Age</legend>
+                <label for="-18">&lt;18</label>
+                <input type="radio" id="-18" name="-18" value="-18">
+                <label for="19-35">19-35</label>
+                <input type="radio" id="19-35" name="19-35" value="19-35">
+                <label for="36-48">36-48</label>
+                <input type="radio" id="36-48" name="36-48" value="36-48">
+                <label for="+49">&gt;49</label>
+                <input type="radio" id="+49" name="+49" value="+49">
+            </fieldset>
+        </div>
+        <div>
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" name="profession">
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="fr">France</option>
+                <option value="gr">Germany</option>
+                <option value="pt">Portugal</option>
+                <option value="es">Spain</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Interests</legend>
+                <label for="anime">Anime</label>
+                <input type="checkbox" name="interest" id="anime" value="anime">
+                <label for="music">Music</label>
+                <input type="checkbox" name="interest" id="music" value="music">
+                <label for="pc">PC</label>
+                <input type="checkbox" name="interest" id="pc" value="pc">
+            </fieldset>
+        </div>
+        <div>
+            <label for="how">How did you find us?</label><br>
+            <textarea name="how" id="how" cols="40" rows="5"></textarea>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>
